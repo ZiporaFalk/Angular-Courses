@@ -1,0 +1,23 @@
+.custom-dialog-container .mat-dialog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* מניעת גלילה */
+    background-color: aquamarine;
+    color: brown;
+}
+.message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+button{
+    margin: 15px;
+}
+#buttons{
+    position: relative;
+    /* left: 350px; */
+    margin: 10px 520px;
+    width: 500px;}

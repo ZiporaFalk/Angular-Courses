@@ -1,0 +1,29 @@
+<div id="dialog">
+    <h1 mat-dialog-title>{{data.action}} Lesson</h1>
+    <div mat-dialog-content>
+        @if(data.action=='Add' || data.action=='Update')
+        {
+        <mat-form-field>
+            <mat-label>כותרת השיעור</mat-label>
+            <input matInput [(ngModel)]="data.title" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>תוכן השיעור</mat-label>
+            <textarea matInput [(ngModel)]="data.content"></textarea>
+        </mat-form-field>
+        }
+        @if(data.action=='Delete' || data.action=='Update')
+        {
+        <mat-form-field>
+            <mat-label>מזהה שיעור לעידכון</mat-label>
+            <input matInput [(ngModel)]="data.idLesson" />
+        </mat-form-field>
+        }
+
+
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">בטל</button>
+        <button mat-button [mat-dialog-close]="data">שמור</button>
+    </div>
+</div>

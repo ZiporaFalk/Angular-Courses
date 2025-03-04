@@ -1,0 +1,15 @@
+
+<div id="buttons">
+    <button mat-raised-button (click)="openDialog('Add')">Add Course</button>
+    <button mat-raised-button (click)="openDialog('Update')">Update Course</button>
+    <button mat-raised-button (click)="openDialog('Delete')">Delete Course</button>
+</div>
+<list-courses [IsToShow]="true"></list-courses>
+
+@if (Message) {
+<div class="message">
+    {{ Message }}
+</div>
+}
+
+

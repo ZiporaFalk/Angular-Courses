@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  background-color: #ffebee;
+}
+
+
+#dialog {
+  overflow: hidden; 
+  text-align: center;
+}

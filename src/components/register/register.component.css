@@ -1,0 +1,18 @@
+form {
+    width: 150px;
+    position: fixed;
+    right: 720px;
+    top: 200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.success-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+

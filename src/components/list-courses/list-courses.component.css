@@ -1,0 +1,88 @@
+/* סגנון עבור רשימת הקורסים */
+.course-list {
+    display: flex;
+    /* flex-direction: column;
+    gap: 20px; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* סגנון עבור כרטיס הקורס */
+.course-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #b71c1c;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(183, 28, 28, 0.5);
+    background: #ffebee;
+    /* max-width: 600px;
+    margin: auto; */
+    width: 500px;
+    /* רוחב קבוע לכרטיס */
+    margin: 10px;
+}
+
+/* סגנון עבור כותרת הכרטיס */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+/* סגנון עבור מידע הקורס */
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* סגנון עבור שם הקורס */
+mat-card-title {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+/* סגנון עבור תיאור הקורס */
+mat-card-subtitle {
+    color: #b71c1c;
+}
+
+/* סגנון עבור כפתורים */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* סגנון עבור כל כפתור */
+.action-button {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+/* סגנון עבור תוכן הכרטיס */
+mat-card-content {
+    padding: 16px;
+}
+
+/* סגנון עבור רשימת השיעורים */
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* סגנון עבור פרטי השיעור */
+.lesson-title {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+.lesson-description {
+    color: #b71c1c;
+}
+
+mat-icon {
+    margin: 5px;
+}

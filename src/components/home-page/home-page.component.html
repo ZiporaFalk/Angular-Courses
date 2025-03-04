@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="toolbar-row">
+        <span>דף הבית</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<nav>
+    <a mat-button routerLink="Logout" (click)="onLogout()">Logout</a>
+    <a mat-button routerLink="Login" routerLinkActive="active1">Login</a>
+    <a mat-button routerLink="Register" routerLinkActive="active1">Register</a>
+    <a mat-button routerLink="" routerLinkActive="active1">Home</a>
+    <a mat-button routerLink="Courses" routerLinkActive="active1">Courses</a>
+</nav>
+<router-outlet></router-outlet>

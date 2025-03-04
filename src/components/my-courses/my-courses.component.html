@@ -1,0 +1,35 @@
+@if (Message) {
+<div class="message">
+  {{ Message }}
+</div>
+}
+
+<div class="course-cards-container">
+
+  @for ( course of a;track course.id) {
+  <mat-card class="course-card" [ngClass]="{'active': activeCourses.includes(course.id)}">
+    <mat-card-header>
+      <mat-card-title>{{ course.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ course.description }}</p>
+    </mat-card-content>
+  
+    <mat-card-content>
+      <div class="lesson-list">
+        @for ( lesson of course.Lessons; track lesson.id) {
+        <mat-list>
+          <mat-list-item>
+            <div class="lesson-title">{{ lesson.title }}</div>
+            <div class="lesson-description">{{ lesson.content }}</div>
+          </mat-list-item>
+        </mat-list>
+        }
+      </div>
+    </mat-card-content>
+  </mat-card>
+  }
+  @empty {
+  <p>לא נמצאו קורסים להצגה.</p>
+  }
+</div>
