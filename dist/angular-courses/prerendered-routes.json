@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/": {},
+    "/Courses": {},
+    "/Courses/ListCourses": {},
+    "/Courses/ManageCourses": {},
+    "/Courses/MyCourses": {},
+    "/Login": {},
+    "/Logout": {},
+    "/Register": {}
+  }
+}
